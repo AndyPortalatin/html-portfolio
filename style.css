@@ -1,0 +1,14 @@
+body {
+  background-color: rgb(169, 189, 165)
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.portfolio {
+  color: black;
+  font-family: "Libre Baskerville", serif;
+  text-align: center;
+}
