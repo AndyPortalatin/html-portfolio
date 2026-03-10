@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Flag Project: Puerto Rico Flag</title>
+  <style>
+    .flag {
+      width: 900px;
+      height: 600px;
+      position: relative;
+      background: linear-gradient(
+        to bottom,
+        #CE1126   0px,  #CE1126 120px,
+        white   120px,  white   240px,
+        #CE1126 240px,  #CE1126 360px,
+        white   360px,  white   480px,
+        #CE1126 480px,  #CE1126 600px
+      );
+    }
+
+
+    .flag > div {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 0;
+      height: 0;
+      border-top: 300px solid transparent;
+      border-bottom: 300px solid transparent;
+      border-left: 520px solid skyblue;
+    }
+
+
+    .flag > div > div {
+      position: absolute;
+      left: -422px;
+      top: -75px;
+      width: 150px;
+      height: 150px;
+    }
+
+    .flag > div > div::before {
+      content: "★";
+      position: absolute;
+      font-size: 120px;
+      color: white;
+      width: 150px;
+      text-align: center;
+      line-height: 150px;
+      top: 0;
+      left: 0;
+      z-index: 10;
+    }
+
+    
+    .flag > p,
+    .flag > div > div > p {
+      font-family: "Georgia", serif;
+      font-size: 3rem;
+      font-weight: normal;
+      color: #1a1a1a;
+      text-align: center;
+      margin: 0;
+      position: absolute;
+      width: 900px;
+    }
+
+    .flag > p {
+      top: 625px;
+      left: 0;
+    }
+
+    .flag > div > div > p {
+      top: 460px;
+      left: -98px;
+    }
+  </style>
+</head>
+<body>
+  <div class="flag">
+    <p>The Flag of Puerto Rico </p>
+    <div>
+      <div>
+        <p>using CSS</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
